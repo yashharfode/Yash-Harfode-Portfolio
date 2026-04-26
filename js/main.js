@@ -124,7 +124,7 @@
     });
 
     // ─── EMAILJS FORM ───
-    emailjs.init("YOUR_PUBLIC_KEY");
+    emailjs.init("BATORK6JcYCAz5A20");
     document.getElementById('contact-form').addEventListener('submit', function(e) {
       e.preventDefault();
       const overlay = document.getElementById('form-overlay');
@@ -132,7 +132,7 @@
       document.getElementById('form-spinner').style.display = 'block';
       overlay.classList.add('active'); msg.innerText = "Transmitting securely...";
 
-      emailjs.sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", this)
+      emailjs.sendForm("service_h856irk", "template_4w7tit3", this)
         .then(() => {
           document.getElementById('form-spinner').style.display = 'none';
           msg.innerText = "Message transmitted successfully!"; this.reset();
