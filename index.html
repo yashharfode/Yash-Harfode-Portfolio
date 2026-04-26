@@ -508,7 +508,7 @@
         </div>
       </div>
       
-      <div style="position: relative;">
+            <div style="position: relative;">
         <form id="contact-form">
           <div class="form-overlay" id="form-overlay">
             <div class="loader-spinner" id="form-spinner"></div>
@@ -516,9 +516,11 @@
           </div>
 
           <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px;">
-            <input type="text" name="user_name" class="form-control interactive" placeholder="Name" required>
-            <input type="email" name="user_email" class="form-control interactive" placeholder="Email" required>
+            <input type="text" name="from_name" class="form-control interactive" placeholder="Name" required>
+            
+            <input type="email" name="reply_to" class="form-control interactive" placeholder="Email" required>
           </div>
+          
           <input type="text" name="subject" class="form-control interactive" placeholder="Subject" required>
           <textarea name="message" class="form-control interactive" placeholder="Message" required></textarea>
           
@@ -527,7 +529,7 @@
           </button>
         </form>
       </div>
-    </div>
+
   </section>
 
   <footer style="text-align: center; padding: 40px; border-top: 1px solid var(--border); font-family: var(--font-mono); font-size: 12px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted);">
